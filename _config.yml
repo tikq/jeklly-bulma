@@ -42,6 +42,7 @@ paginate: 10
 max_page: 10
 
 gitalk:
+    enable: true
     clientID: 408c69f95c46893a3c1c
     clientSecret: ca70fab391d99bab483354550ba397a085d83a01
     owner: tikq
