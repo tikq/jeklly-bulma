@@ -1,0 +1,25 @@
+<div id="link" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+        <div class="card is-size-7-desktop">
+            <header class="card-header">
+                <p class="card-header-title">
+                    <span class="icon is-small">
+                        <i class="fas fa-link"></i>
+                    </span>&nbsp&nbsp
+                    Links
+                </p>
+            </header>
+            <div class="card-content">
+                <div class="content">
+                    {% for link in site.links %}
+                    <a href="{{ link.url }}">
+                        {{ link.name }}
+                    </a>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+</div>

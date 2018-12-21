@@ -1,0 +1,70 @@
+<!-- Navbar start-->
+<nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
+
+    <div class="navbar-brand">
+        <a class="navbar-item" href="{{ site.baseurl }}/index">
+            <img class="is-rounded" src="{{ site.baseurl }}/assets/image/avator.jpg">
+        </a>
+
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasic" class="navbar-menu">
+        <div class="navbar-start">
+            <a class="navbar-item" href="{{ site.baseurl }}/index">
+                Home
+            </a>
+            <a class="navbar-item" href="{{ site.baseurl }}/archives">
+                Archives
+            </a>
+            <a class="navbar-item" href="{{ site.baseurl }}/about">
+                About
+            </a>
+            <div class="navbar-item has-dropdown is-hoverable">
+                <a class="navbar-link">
+                    More
+                </a>
+                <div class="navbar-dropdown">
+                    <a class="navbar-item" href="{{ site.baseurl }}/categories">
+                        Categories
+                    </a>
+                    <a class="navbar-item" href="{{ site.baseurl }}/tags">
+                        Tags
+                    </a>
+                    <hr class="navbar-divider">
+                    <a id="linkMenu" class="navbar-item">
+                        Links
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-end">
+            {% if site.author.wechat.show %}
+            <div class="navbar-item">
+                <a class="button is-outlined  is-success tooltip is-tooltip-bottom" data-tooltip="点击查看我的二维码">
+                    <span class="icon">
+                        <i class="fab fa-weixin"></i>
+                    </span>
+                    <span>WeChat</span>
+                </a>
+            </div>
+            {% endif %}
+            <div class="navbar-item">
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/{{site.author.github}}/{{site.author.repo}}"
+                    data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star {{site.author.github}}/{{site.author.repo}} on GitHub">Star</a>
+            </div>
+            <div class="navbar-item">
+                <!-- Place this tag where you want the button to render. -->
+                <a class="github-button" href="https://github.com/{{site.author.github}}/{{site.author.repo}}/fork"
+                    data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork {{site.author.github}}/{{site.author.repo}} on GitHub">Fork</a></div>
+        </div>
+    </div>
+    </div>
+</nav>
+<!-- Navbar end-->

@@ -1,0 +1,24 @@
+<div class="card is-size-7-desktop">
+    <header class="card-header">
+        <p class="card-header-title">
+            <span class="icon is-small">
+                <i class="far fa-calendar"></i>
+            </span>&nbsp
+            Categories
+        </p>
+    </header>
+    <div class="card-content">
+        <div class="content">
+            <div class="field is-grouped is-grouped-multiline">
+                {% for category in site.categories %}
+                <div class="control">
+                    <div class="tags has-addons">
+                        <a class="tag is-link" href="{{ site.baseurl }}/categories/#{{ category[0]}}">{{ category[0] }}</a>
+                        <a class="tag is-rounded">{{ category[1].size }}</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

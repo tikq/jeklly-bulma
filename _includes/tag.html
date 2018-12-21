@@ -1,0 +1,22 @@
+<div class="card is-size-7-desktop">
+    <header class="card-header">
+        <p class="card-header-title">
+            <span class="icon is-small">
+                <i class="fas fa-tags"></i>
+            </span>&nbsp
+            Tags
+        </p>
+    </header>
+    <div class="card-content">
+        <div class="content">
+            <div class="field is-grouped is-grouped-multiline">
+                {% for tag in site.tags %}
+                <div class="control">
+                    <a class="badge is-badge-success is-badge-small" data-badge="{{tag[1].size}}" href="{{ site.baseurl }}/tags/#{{ tag[0]}}">
+                        {{ tag[0] }}
+                    </a></div>&nbsp&nbsp&nbsp
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

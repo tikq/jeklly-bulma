@@ -1,0 +1,22 @@
+---
+layout: default
+title: Tags
+---
+{% include tag.html %}
+<hr/>
+<div class="tile is-ancestor">
+    <div class="tile is-parent is-vertical">
+        {% for tag in site.tags %}
+        <div id="{{ tag[0] }}" class="tile is-child box">
+            <p class="title">{{ tag[0] }}</>
+            <hr />
+            <ul>
+                {% assign sorted_posts = tag[1] | reverse %}
+                {% for post in sorted_posts %}
+                <li>{{ post.date | date: "%Y.%m.%d" }}-<a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</div>
