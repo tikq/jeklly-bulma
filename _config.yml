@@ -22,15 +22,15 @@ author:
   name : tikq
   github: tikq
   email: voidfunc@163.com
-  wechat: 
-    name: tikq
-    show: false
+  wechat:
+    show: true 
+    name: wechat
   repo: tikq.github.io
 links:
-  - name: Baidu
-    url: https://baidu.com
-  - name: QQ
-    url: https://qq.com
+  - name: Jekyll
+    url: http://jekyllrb.com/
+  - name: Bluma
+    url: https://bulma.io
 
 
 permalink: /:title:output_ext

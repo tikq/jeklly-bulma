@@ -2,13 +2,36 @@
 layout: default
 ---
 <div class="container">
-    <div class="content">
-        <p>{{ content}}</p>
+    <nav class="level">
+        <div class="level-item has-text-centered">
+            <span class="icon is-small">
+                <i class="far fa-calendar"></i>
+            </span>&nbsp{{ page.date | date: "%Y.%m.%d" }}
+        </div>
+        <div class="level-item has-text-centered">
+            <span class="icon is-small">
+                <i class="fas fa-archive"></i>
+            </span>&nbsp{{page.categories}}
+        </div>
+        <div class="level-item has-text-centered">
+            <div class="level-item">
+                <span class="icon is-small">
+                    <i class="fas fa-tags"></i>
+                </span>&nbsp
+                {% for tag in page.tags %}
+                {{tag}}&nbsp
+                {% endfor %}
+
+            </div>
+        </div>
+    </nav>
+    <div class="container box">
+        {{ content}}
+        {% include info.html %}
     </div>
     {% if site.gitalk.enable %}
-         {% include comments.html %}
+    {% include comments.html %}
     {% endif %}
-    {% include info.html %}
     <hr />
     <!-- Main container -->
     <nav class="level">
