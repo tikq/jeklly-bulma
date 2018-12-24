@@ -6,7 +6,7 @@ title: Welcom to  tikq's Blog
     {% for post in paginator.posts %}
     <div class="column is-full">
         <div class="has-ribbon">
-            <div class="ribbon is-primary">{{post.categories}}</div>
+            <a class="ribbon is-primary" href="{{ site.baseurl }}/categories/#{{ post.categories}}">{{post.categories}}</a>
             <article class="media box">
                 <div class="media-content">
                     <div class="content">
@@ -26,7 +26,7 @@ title: Welcom to  tikq's Blog
                             <div class="level-item">
                                 <div class="tags are-normal">
                                     {% for tag in post.tags %}
-                                    <span class="tag is-rounded is-link">{{tag}}</span>
+                                    <a class="tag is-rounded is-link" href="{{ site.baseurl }}/tags/#{{tag}}">{{tag}}</a>
                                     {% endfor %}
                                 </div>
                             </div>

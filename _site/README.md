@@ -1,1 +1,0 @@
-# tikq.github.io

@@ -9,9 +9,12 @@ layout: default
             </span>&nbsp{{ page.date | date: "%Y.%m.%d" }}
         </div>
         <div class="level-item has-text-centered">
-            <span class="icon is-small">
-                <i class="fas fa-archive"></i>
-            </span>&nbsp{{page.categories}}
+            <div class="level-item">
+                <span class="icon is-small">
+                    <i class="fas fa-archive"></i>
+                </span>
+                <a href="{{ site.baseurl }}/categories/#{{ page.categories}}">&nbsp{{page.categories}}</a>
+            </div>
         </div>
         <div class="level-item has-text-centered">
             <div class="level-item">
@@ -19,9 +22,8 @@ layout: default
                     <i class="fas fa-tags"></i>
                 </span>&nbsp
                 {% for tag in page.tags %}
-                {{tag}}&nbsp
+                <a href="{{ site.baseurl }}/tags/#{{tag}}">{{tag}}&nbsp</a>
                 {% endfor %}
-
             </div>
         </div>
     </nav>
