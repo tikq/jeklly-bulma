@@ -13,7 +13,7 @@ layout: default
                 <span class="icon is-small">
                     <i class="fas fa-archive"></i>
                 </span>
-                <a href="{{ site.baseurl }}/categories/#{{ page.categories}}">&nbsp{{page.categories}}</a>
+                <a href="{{ site.baseurl }}/categories/#{{ page.categories }}">&nbsp{{ page.categories }}</a>
             </div>
         </div>
         <div class="level-item has-text-centered">
@@ -22,7 +22,7 @@ layout: default
                     <i class="fas fa-tags"></i>
                 </span>&nbsp
                 {% for tag in page.tags %}
-                <a href="{{ site.baseurl }}/tags/#{{tag}}">{{tag}}&nbsp</a>
+                <a href="{{ site.baseurl }}/tags/#{{ tag }}">{{ tag }}&nbsp</a>
                 {% endfor %}
             </div>
         </div>
