@@ -1,0 +1,27 @@
+<a id="toc" class="button is-small is-rounded is-outlined is-link has-text-centered fixedRight">
+        <span class="icon is-small">
+                <i class="fas fa-list-ul"></i>
+        </span>
+</a>
+
+<div id="tocContainer" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-card">
+            <section class="modal-card-body">
+                    <div class="menu" id="tocBox"></div>
+            </section>
+          </div>
+    <button id="tocClose" class="modal-close is-large" aria-label="close"></button>   
+    </div>
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#tocBox').toc({
+            listType: 'ul', noBackToTopLinks: true, showEffect: 'fadeIn', classes: {
+                list: 'menu-list'
+            }
+        });
+    });
+
+</script>

@@ -24,6 +24,18 @@ $(document).ready(function () {
         $("#searchContainer").toggleClass("is-active");
     });
 
+    $("#toc").click(function () {
+        $("#tocContainer").toggleClass("is-active");
+    });
+
+    $("#tocClose").click(function () {
+        $("#tocContainer").toggleClass("is-active");
+    });
+
+    $("#tocBox").click(function () {
+        $("#tocContainer").toggleClass("is-active");
+    });
+    
     $("#toTop").click(function () {
         window.scrollTo(0, 0);
 
