@@ -17,13 +17,15 @@ title: Archives
 
     {% assign year_posts_map = site.posts | group_by_exp:"post", "post.date | date: '%Y'"|sort:"name"|reverse %}
     {% for year in year_posts_map %}
-    {% assign sorted_posts = year.items | reverse %}
-    {% for post in sorted_posts %}
+    {% assign day_posts_map = year.items | group_by_exp:"post", "post.date | date: '%Y.%m.%d'"|sort:"name"|reverse %}
+    {% for day in day_posts_map %}
     <div class="timeline-item is-primary">
         <div class="timeline-marker is-primary"></div>
         <div class="timeline-content">
-            <p class="heading">{{ post.date| date: "%Y.%m.%d" }}</p>
+            <p class="heading">{{ day.name }}</p>
+            {% for post in day.items %}
             <p><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></p>
+            {% endfor %}
         </div>
     </div>
     {% endfor %}

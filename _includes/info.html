@@ -5,7 +5,7 @@
             <li><strong>转载请注明出处！</strong></li>
             <li>本文作者：{%if page.author %} {{page.author}} {% else %} {{ site.author.name }} {% endif %}</li>
             <li>本文标题：{{ page.title }}</li>
-            <li>本文地址：{{site.url}}{{ site.baseurl }}{{page.url}}</li>
+            <li>本文地址：{{site.url}}{{ site.baseurl }}{{page.url|url_decode}}</li>
         </ul>
     </div>
     </div>

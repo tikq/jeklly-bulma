@@ -33,11 +33,12 @@ links:
     url: https://bulma.io
 
 
-permalink: /:title:output_ext
+permalink: /:categories/:title:output_ext
 # Build settings
 markdown: kramdown
 
 excerpt_separator: <!--more-->
+excerpt_default: No excerpt founded,click Read more button for detail!
 paginate: 10
 max_page: 10
 

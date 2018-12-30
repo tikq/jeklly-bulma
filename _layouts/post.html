@@ -29,13 +29,10 @@ layout: default
         </div>
     </nav>
     <div class="container box">
-        {{ content}}
-        <br/><br/><br/>
+        {{ content| split: site.excerpt_separator| last }}
+        <br/><br/>
         {% include info.html %}
     </div>
-    {% if site.gitalk.enable %}
-    {% include comments.html %}
-    {% endif %}
     <hr />
     <!-- Main container -->
     <nav class="level">
@@ -80,4 +77,7 @@ layout: default
             </div>
         </div>
     </nav>
+    {% if site.gitalk.enable %}
+    {% include comments.html %}
+    {% endif %}
 </div>
