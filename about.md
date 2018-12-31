@@ -1,18 +1,30 @@
 ---
-layout: container
+layout: about
 title: About
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+>这里主要总结学习或记录工作过程中遇到的问题及其解决方法，并整理成文章。
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+#### 关于我
+* 专注Java后端开发
+* 了解一点前端
+* 正在努力学习中...
+  
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+#### 关于此主题
+>对于前端了解有限，因而在样式上均使用默认配置，如有需要可自行配置编译进行定制。
+
+###### 基础
+* [Jekyll](http://jekyllrb.com/)
+* [Bluma](https://bulma.io/)
+  
+###### 插件
+* 目录：[jekyll-table-of-contents](https://github.com/ghiculescu/jekyll-table-of-contents)
+* 评论：[gitalk](https://github.com/gitalk/gitalk/)
+* 搜索：[simple-jekyll-search](https://github.com/christian-fei/Simple-Jekyll-Search)
+* 代码高亮：[highlightjs](https://highlightjs.org/)
+
+  
 
 
-[jekyll-organization](https://github.com/jekyll)
 
