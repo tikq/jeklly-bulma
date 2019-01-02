@@ -28,9 +28,9 @@ layout: default
             </div>
         </div>
     </nav>
-    <div class="container content box">
-        {{ content| split: site.excerpt_separator| last }}
-        <br/><br/>
+    <div class="container box">
+        <div class="content">{{ content| split: site.excerpt_separator| last }}</div>
+        <br/>
         {% include info.html %}
     </div>
     <hr />
