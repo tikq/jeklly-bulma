@@ -1,6 +1,5 @@
 
 $(document).ready(function () {
-    hljs.initHighlightingOnLoad();
 
     $("#search").click(function () {
         $("#searchContainer").toggleClass("is-active");
