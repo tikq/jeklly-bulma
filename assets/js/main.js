@@ -2,20 +2,6 @@
 $(document).ready(function () {
     hljs.initHighlightingOnLoad();
 
-    var sjs = SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/search.json',
-        searchResultTemplate: '<li><a class="has-text-white-bis	has-text-weight-light has-text-centered" href="{url}" >{date}-{title}</a></li>',
-        noResultsText: '<li class="has-text-white-bis has-text-weight-light has-text-centered"> No results found</li>',
-        limit: 10,
-        fuzzy: false,
-      });
-
-      $("#search-input").change(function () {
-        sjs.search($("#search").value);
-    });
-
     $("#search").click(function () {
         $("#searchContainer").toggleClass("is-active");
     });

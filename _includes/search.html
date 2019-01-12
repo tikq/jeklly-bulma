@@ -14,7 +14,26 @@
                                 <i class="fas fa-search" aria-hidden="true"></i>
                         </span>
                 </div>
-                <ul id="results-container" class="has-text-centered has-text-light"></ul>
+                <ul id="results-container" class="has-text-light"></ul>
         </div>
         <button id="searchClose" class="modal-close is-large" aria-label="close"></button>
 </div>
+
+
+
+<script type="text/javascript">
+$(document).ready(function () {
+         SimpleJekyllSearch({
+                searchInput: document.getElementById('search-input'),
+                resultsContainer: document.getElementById('results-container'),
+                json: '/search.json',
+                searchResultTemplate: '<li><a class="has-text-white-bis	has-text-weight-light  content" href="{url}" >&nbsp&nbsp&nbsp{date}-{title}</a></li>',
+                noResultsText: '<li class="has-text-white-bis has-text-weight-light has-text-centered "> No results found</li>',
+                limit: 10,
+                fuzzy: false,
+        });
+
+
+});
+
+</script>
