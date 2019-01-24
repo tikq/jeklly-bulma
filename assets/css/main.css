@@ -4,7 +4,7 @@
 .manTransparent{background-color: rgba(0, 0, 0, 0);}
 .autoWidth{width:95%;}
  
-code.highlighter-rouge {
+.lineBreak {
     word-break: break-word;
     white-space: normal;
 }

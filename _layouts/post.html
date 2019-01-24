@@ -29,7 +29,7 @@ layout: default
         </div>
     </nav>
     <div class="container box">
-        <div class="content">{{ content| split: site.excerpt_separator| last }}</div>
+        <div class="content lineBreak">{{ content| split: site.excerpt_separator| last }}</div>
         <br/>
         {% include info.html %}
     </div>
@@ -77,11 +77,8 @@ layout: default
             </div>
         </div>
     </nav>
-    <script type="text/javascript">
-        
-            hljs.initHighlightingOnLoad();
-        
-    
+    <script type="text/javascript">      
+            hljs.initHighlightingOnLoad();      
     </script>
     {% if site.gitalk.enable %}
     {% include comments.html %}
